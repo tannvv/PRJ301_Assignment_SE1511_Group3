@@ -19,11 +19,11 @@
             <table>
                 <tr>
                     <td>Watch id :</td>
-                    <td><input type="text" value="" name="id" required=""></td>
+                    <td><input type="text" value="" name="id" required="" minlength="3" maxlength="10"></td>
                 </tr>
                 <tr>
                     <td>Name :</td>
-                    <td><input type="text" value="" name="name" required=""></td>
+                    <td><input type="text" value="" name="name" required="" minlength="5" maxlength="25"></td>
                 </tr>
                 <tr>
                     <td>Manufacturer :</td>
@@ -35,11 +35,11 @@
                 </tr>
                 <tr>
                     <td>Price :</td>
-                    <td><input type="number" value="" name="price" required=""></td>
+                    <td><input type="number" value="" name="price" required="" min="0" step="1"></td>
                 </tr>
                 <tr>
                     <td>Quantity :</td>
-                    <td><input type="number" value="" name="quantity" required=""></td>
+                    <td><input type="number" value="" name="quantity" required="" min="0" step="1"></td>
                 </tr>
                 <tr>
                     <td>Sale :</td>

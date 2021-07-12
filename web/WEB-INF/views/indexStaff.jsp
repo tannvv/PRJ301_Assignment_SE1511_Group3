@@ -97,14 +97,14 @@
                     <form action="UpdateServlet" method="POST" enctype="multipart/form-data" width="70%">
                     <tr class="detail">
                         <th><input type="text" value="${watch.watchId}" readonly="" name="id"></th>
-                        <td><input type="text" value="${watch.watchName}" required="" name="name"></td>
+                        <td><input type="text" value="${watch.watchName}" required="" name="name" minlength="5" maxlength="25"></td>
                         <td><img src="images/${watch.urlImage}" width="100" class="watch" name="urlImage"></br>
                             <input type="file" name="photo" accept=".png" required="">
                         </td>
                         <td><input type="text" value="${watch.manufacturer}" required="" name="manufacturer"></td>
                         <td><input type="text" value="${watch.description}" required="" name="description"></td>
-                        <td><input type="text" value="${watch.price}" required="" name="price"></td>
-                        <td><input type="text" value="${watch.quantity}" required="" name="quantity"></td>
+                        <td><input type="number" value="${watch.price}" required="" name="price" min="0" step="1"></td>
+                        <td><input type="number" value="${watch.quantity}" required="" name="quantity" min="0" step="1"></td>
                         <td>
                             <select name="sale">
                                 <option ${(watch.sale eq true)?"selected" : ""} value="true" >True</option>
